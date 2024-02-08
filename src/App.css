@@ -23,9 +23,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.header {
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  padding: 30px;
+}
 
 .App-link {
   color: #61dafb;
+}
+.participateButton {
+  font-size: larger;
 }
 
 @keyframes App-logo-spin {
