@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+/notes.md 
+notes.md
+
 # testing
 /coverage
 
@@ -21,3 +24,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+node_modules
+.env
+
+# Hardhat files
+/cache
+/artifacts
+
+# TypeChain files
+/typechain
+/typechain-types
+
+# solidity-coverage files
+/coverage
+/coverage.json
