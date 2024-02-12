@@ -90,6 +90,6 @@ const ABI = [
     type: "function",
   },
 ];
-const contractAddress = "0x9d83e140330758a8fFD07F8Bd73e86ebcA8a5692";
+const contractAddress = "0xE305529457A104875aaB3630228d2fcd1E2e7539";
 
 export default { contractAddress, ABI };

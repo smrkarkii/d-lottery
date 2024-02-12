@@ -1,4 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
+require("@nomicfoundation/hardhat-ethers");
+
 // require("@nomniclabs/hardhat-waffle");
 
 // task("accounts", "Prints the list of accounts", async (tasksArgs, hre) => {

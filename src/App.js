@@ -7,14 +7,16 @@ import Home from "../src/components/Home";
 import Participants from "./components/Participants";
 import Winner from "./components/Winner";
 import Manager from "./components/Manager";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         {/* Render Home component along with Participants component */}
         <Route
-          path="/home"
+          path="/"
           element={
             <>
               <Home />
