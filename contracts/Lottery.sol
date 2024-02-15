@@ -5,6 +5,7 @@ contract Lottery {
     address public manager;
     address payable[] public participants;
     address payable public winner;
+    uint public count;
 
     constructor() {
         manager = msg.sender;
@@ -13,6 +14,7 @@ contract Lottery {
     function participate() public payable {
         require(msg.value == 10 wei);
         participants.push(payable(msg.sender));
+        count = count + 1;
     }
 
     function chooseWinner() public {
@@ -23,7 +25,8 @@ contract Lottery {
         uint rands = win % participants.length;
         winner = participants[rands];
         winner.transfer(getAmount());
-        participants = new address payable[](0); //this will intiliaze the players array back to 0
+        participants = new address payable[](0);
+        count = 0; //this will intiliaze the players array back to 0
     }
 
     function randomNumber() public view returns (uint) {
