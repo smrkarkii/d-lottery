@@ -20,6 +20,19 @@ const ABI = [
   },
   {
     inputs: [],
+    name: "count",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
     name: "getAmount",
     outputs: [
       {
@@ -90,6 +103,6 @@ const ABI = [
     type: "function",
   },
 ];
-const contractAddress = "0xE305529457A104875aaB3630228d2fcd1E2e7539";
+const contractAddress = "0xd48CD84e69cf9e7CD5f215B27E06e7e19F219FEB";
 
 export default { contractAddress, ABI };
