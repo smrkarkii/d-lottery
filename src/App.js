@@ -62,13 +62,13 @@ function App() {
 
     loadBLockchain();
     // contract();
-  }, []);
+  });
 
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
-        {/* <Route path="/" element={<Intro state={state} />} /> */}
+        <Route path="/" element={<Intro state={state} />} />
         {/* Render Home component along with Participants component */}
         <Route
           path="/home"
