@@ -15,7 +15,7 @@ function Winner({ state }) {
       }
     };
     fetchWinner();
-  }, []);
+  }, [winner]);
   return (
     <div className="Winner" style={{ textAlign: "center" }}>
       <header className="header">Winner</header>

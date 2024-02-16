@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.part-class {
+  text-align: center;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -28,6 +31,11 @@
   font-size: calc(10px + 2vmin);
   color: black;
   padding: 30px;
+}
+.nav-item {
+  margin-right: 25px;
+  font-size: 15px;
+  padding-top: 15px;
 }
 
 .App-link {
