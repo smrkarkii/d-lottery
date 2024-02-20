@@ -15,7 +15,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.account {
+  position: absolute;
+  right: 0;
+  color: red;
+  font-weight: 600;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
