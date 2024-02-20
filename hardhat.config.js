@@ -19,7 +19,7 @@ module.exports = {
   networks: {
     hardhat: {},
     sepolia: {
-      url: process.env.URL,
+      url: process.env.alchemy_URL,
       accounts: [process.env.PRIVATE],
     },
   },
