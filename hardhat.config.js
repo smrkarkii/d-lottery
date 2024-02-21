@@ -1,5 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("@nomicfoundation/hardhat-ethers");
+require("dotenv").config();
 
 // require("@nomniclabs/hardhat-waffle");
 
@@ -18,10 +19,8 @@ module.exports = {
   networks: {
     hardhat: {},
     sepolia: {
-      url: "https://eth-sepolia.g.alchemy.com/v2/mm-xT0j7xWytbX6ikkzdGJQFQX3QzYQr",
-      accounts: [
-        "1f7b221d9f3ff1c1f82d2e71f1a0382442f8018b76cc0ca2cf5149f6140281bf",
-      ],
+      url: process.env.alchemy_URL,
+      accounts: [process.env.PRIVATE],
     },
   },
   paths: {

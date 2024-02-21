@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light m-auto">
-      <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Decentralized Lottery
-        </Link>
-
-        <div className="" id="navbarNav">
-          <ul className="navbar-nav list-unstyled">
+    <>
+      <nav
+        className="navbar navbar-dark ml-auto "
+        style={{ color: "#0583d2", backgroundColor: "white" }}
+      >
+        <a href="/home" className="navbar-brand head-name">
+          Decentralized Lottery{" "}
+        </a>
+        <div className="collapse navbar-collapse" id="navbarToggler">
+          <ul
+            className="navbar-nav ml-auto list-unstyled"
+            style={{ marginLeft: "auto" }}
+          >
             <li className="nav-item">
-              <Link className="nav-link" to="/">
+              <Link className="nav-link" to="/home">
                 Home
               </Link>
             </li>
@@ -28,8 +34,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 };
 
